@@ -3,7 +3,7 @@
     {{csrf_field()}}
     {{method_field('GET')}}
     <div class="from-group">
-        <input type="submit" value="{{$lesson->title}}">
+        <input type="submit" value="{{$lesson->status}}">
     </div>
 </from>
 @endforeach

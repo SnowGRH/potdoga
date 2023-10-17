@@ -11,7 +11,7 @@ class LESSON extends Model
     protected $fillable = [
         'status',
         'subject_id',
-        'user_id',
+        'id',
         
     ];
     

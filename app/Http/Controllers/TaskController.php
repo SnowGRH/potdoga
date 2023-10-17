@@ -25,10 +25,11 @@ class TaskController extends Controller
     public function store(Request $request)
     {
         $task = new LESSON();
-        $task->name = $request->name;
-        $task->email=$request->email;
+        $task->status = $request->status;
+        $task->subject_id=$request->subject_id;
+        $task->user_id=$request->id;
         $task->save();
-        
+
     }
     public function update(Request $request,$id)
     {
